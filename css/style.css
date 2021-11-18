@@ -99,9 +99,34 @@
 
 .ex-10-icon {
     font-size: 60px;
+    animation: rotation 1s linear infinite;
 }
+
+@keyframes rotation {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .ex-11-icon {
     font-size: 60px;
+}
+
+.ex-11-icon:hover {
+    animation: incomplete-rotation 1s linear;
+
+}
+
+@keyframes incomplete-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    90% {
+        transform: rotate(270deg);
+    }
 }
 .ex-12-button, .ex-13-button {
     position: relative;
@@ -132,3 +157,38 @@
     width: 60px;
     height: 20px;
 }
+
+/* Ex 12 solution */
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: top-white-slide 2s linear;
+}
+
+@keyframes top-white-slide {
+    0% {
+        left: 10%
+    }
+    50% {
+        left: 69%
+    }
+    100% {
+        left: 10%
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: bottom-white-slide 2s linear;
+}
+
+@keyframes bottom-white-slide {
+    0% {
+        right: 20%
+    }
+    50% {
+        right: 69%
+    }
+    100% {
+        right: 20%
+    }
+}
+
