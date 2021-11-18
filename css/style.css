@@ -103,21 +103,6 @@
 .ex-11-icon {
     font-size: 60px;
 }
-
-.ex-11-icon:hover {
-    animation: incomplete-rotation 1s linear;
-
-}
-
-@keyframes incomplete-rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    90% {
-        transform: rotate(270deg);
-    }
-}
-
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
